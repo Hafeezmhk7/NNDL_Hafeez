@@ -348,35 +348,4 @@ print("="*70)
 
 # ---
 
-# ## Now With Pickle - First vs Second Run
 
-# ### **First Run** (no pickle exists):
-# ```
-# $ python figure2c_with_pickle.py
-
-# ⚙ Running L2/3 simulations (this will take ~15-20 minutes)...
-# Input  0 nA: ... ✓
-# Input  1 nA: ... ✓
-# ...
-# ✓ Saved to: intralaminar/figure2c_L23_simulation.pckl
-
-# ⚙ Running L5/6 simulations (this will take ~15-20 minutes)...
-# ...
-# ✓ Saved to: intralaminar/figure2c_L56_simulation.pckl
-
-# Total time: ~30-40 minutes
-# ```
-
-# ### **Second Run** (pickle exists):
-# ```
-# $ python figure2c_with_pickle.py
-
-# ✓ Loading pre-saved L2/3 simulation...
-# ✓ Loaded!
-
-# ✓ Loading pre-saved L5/6 simulation...
-# ✓ Loaded!
-
-# ✓ Saved: intralaminar/figure2c_paper_style.png
-
-# Total time: ~10 seconds! 🚀
